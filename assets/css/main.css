@@ -2083,6 +2083,26 @@ input, select, textarea {
 						}
 
 		}
+/* Experience Secion, logos */
+		.logo-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 20px; /* Adjust the space between logos as needed */
+		}
+		
+		.company-logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100px; /* Set the height of the logos */
+		}
+		
+		.company-logo img {
+			max-height: 100%;
+			width: auto; /* Maintain the aspect ratio */
+		}
+		
 
 /* Section/Article */
 
@@ -2409,6 +2429,8 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+		
+
 /* Image */
 
 	.image {
@@ -2656,6 +2678,8 @@ input, select, textarea {
 			ul.icons li .icon:before {
 				font-size: 1.25em;
 			}
+
+
 
 /* Contact */
 
@@ -4004,6 +4028,8 @@ input, select, textarea {
 			}
 
 		}
+
+		
 
 /* Footer */
 
