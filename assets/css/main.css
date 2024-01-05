@@ -2083,25 +2083,53 @@ input, select, textarea {
 						}
 
 		}
-/* Experience Secion, logos */
-		.logo-container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 20px; /* Adjust the space between logos as needed */
-		}
+		/* Experience Secion, logos */
+	.logo-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		margin-top: 50px; /* Adjust the value as needed for spacing above */
+		margin-bottom: 30px; /* Adjust the value as needed for spacing below */
+	}
+
+/* Rest of your CSS for company-logo and img */
+
 		
-		.company-logo {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100px; /* Set the height of the logos */
-		}
-		
-		.company-logo img {
-			max-height: 100%;
-			width: auto; /* Maintain the aspect ratio */
-		}
+.company-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
+    gap: 40px; /* Space between each logo and its content */
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    flex-basis: 33%; /* Allocate equal width, adjust as necessary */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align the contents */
+    text-align: center; /* Center align the text */
+}
+
+.company-logo img {
+    margin-bottom: 20px; /* Space between the logo and the button */
+}
+
+.company-logo ul {
+    padding: 0;
+    list-style: none;
+    width: 100%; /* Ensures the 'Learn more' button stretches across the container */
+}
+
+.company-logo a.special {
+    display: block; /* Make the link take up the full width */
+    margin-top: 10px; /* Space above the 'Learn more' button */
+}
+
+
+	
 		
 
 /* Section/Article */
