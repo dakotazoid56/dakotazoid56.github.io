@@ -3438,6 +3438,32 @@ input, select, textarea {
 			width: 55em;
 		}
 
+		#banner .social-icons {
+			display: flex;
+			justify-content: left;
+			gap: 0.75em;
+			margin: 0 0 1.3em 0;
+		}
+
+			#banner .social-icons a {
+				align-items: center;
+				border-radius: 100%;
+				border: solid 2px rgba(255, 255, 255, 0.125);
+				display: inline-flex;
+				height: 2.25em;
+				justify-content: center;
+				transition: background-color 0.3s ease, color 0.3s ease;
+				width: 2.25em;
+			}
+
+				#banner .social-icons a:hover {
+					background-color: rgba(255, 255, 255, 0.1);
+				}
+
+			#banner .social-icons .icon {
+				font-size: 1.4em;
+			}
+
 		#banner .logo {
 			-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
@@ -3844,14 +3870,23 @@ input, select, textarea {
 				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
 			}
 
+			#three .achievement-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+				gap: 2em;
+				align-items: stretch;
+			}
+
+			#three .achievement-column {
+				display: flex;
+				flex-direction: column;
+				gap: 1.75em;
+			}
+
 			.wrapper.spotlight .inner {
-				display: -moz-flex;
+				/* margin: 0; */
 				display: -webkit-flex;
 				display: -ms-flex;
-				display: flex;
-				-moz-align-items: center;
-				-webkit-align-items: center;
-				-ms-align-items: center;
 				align-items: center;
 				-moz-flex-direction: row;
 				-webkit-flex-direction: row;
@@ -3865,6 +3900,7 @@ input, select, textarea {
 				width: 22em;
 				overflow: hidden;
 				-ms-flex: 1;
+				flex: 1;
 			}
 
 				.wrapper.spotlight .image img {
@@ -3875,6 +3911,7 @@ input, select, textarea {
 			.wrapper.spotlight .content {
 				width: 100%;
 				-ms-flex: 2;
+				flex: 2;
 			}
 
 			.wrapper.spotlight:nth-child(2n - 1) .inner {
@@ -3892,6 +3929,22 @@ input, select, textarea {
 			.wrapper.spotlight.style2 {
 				background-color: #45558d;
 			}
+
+			#three .achievement-group {
+				margin-bottom: 2em;
+			}
+
+				#three .achievement-group h3 {
+					margin-bottom: 0.6em;
+				}
+
+				#three .achievement-group ul li {
+					margin-bottom: 0.75em;
+				}
+
+					#three .achievement-group ul li:last-child {
+						margin-bottom: 0;
+					}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d%3B' /%3E%3C/svg%3E");
